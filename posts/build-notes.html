@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>本站搭建笔记：免费二级域名 + 纯静态博客 · AI 浪</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌊</text></svg>">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="inner">
+    <a class="brand" href="../index.html">AI 浪<span class="dot">.</span></a>
+    <nav class="nav">
+      <a href="../index.html">首页</a>
+      <a href="../about.html">关于</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap article">
+  <h1>本站搭建笔记：免费二级域名 + 纯静态博客</h1>
+  <div class="meta"><span class="tag">建站</span>2026-10-09 · 约 4 分钟</div>
+
+  <p>先说结论：这个博客从注册域名到上线，一分钱没花，总耗时不到一小时。2026 年了，免费顶级域名（当年的 .tk/.ml）早已成为历史，但<strong>免费二级域名 + 静态托管</strong>这条路依然畅通。</p>
+
+  <h2>方案选型</h2>
+  <p>免费域名的现实是：Freenom 在 2024 年退出之后，真正免费的顶级域名已经不存在了。剩下的靠谱选择是各大平台赠送的二级域名：</p>
+  <ul>
+    <li><code>username.github.io</code>—— GitHub Pages，适合程序员，博客生态（Jekyll/Hugo）最成熟；</li>
+    <li><code>xxx.pages.dev</code>—— Cloudflare Pages，部署极快，国内访问速度不错；</li>
+    <li><code>xxx.vercel.app</code> / <code>xxx.netlify.app</code>—— 同样免费，适合前端项目。</li>
+  </ul>
+  <p>本站用的是纯手写 HTML + CSS，没有构建步骤，拖到任何一个平台都能直接跑。</p>
+
+  <h2>本站的技术栈</h2>
+  <ul>
+    <li>纯静态页面：HTML + 一个 <code>style.css</code>，零依赖、零构建；</li>
+    <li>深色 tech 风主题：藏青底 + 香蕉黄点缀，和公众号文章的视觉体系呼应；</li>
+    <li>响应式排版，手机和电脑都能舒服地读。</li>
+  </ul>
+
+  <h2>怎么更新文章</h2>
+  <p>在 <code>posts/</code> 目录下复制一篇旧文章的 HTML，改标题和正文，然后在首页 <code>index.html</code> 加一张卡片链接过去，重新部署即可。全程不需要数据库、不需要后台。</p>
+
+  <blockquote>博客的本质是写作，不是折腾工具。工具越简单，写得越多。</blockquote>
+
+  <p>如果你也想搭一个，照着这个思路走就行——先有个地方写，比写在哪里重要得多。</p>
+
+  <a class="back" href="../index.html">← 返回首页</a>
+</main>
+
+<footer class="site-footer">
+  <div class="brand-mini">AI 浪</div>
+  <div>© 2026 AI 浪 · 想到哪写到哪</div>
+</footer>
+
+</body>
+</html>
